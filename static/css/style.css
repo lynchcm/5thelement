@@ -1,0 +1,56 @@
+#navbarNav li {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Arima Madurai", cursive;
+  color: white; }
+#navbarNav .active-link {
+  color: red; }
+#navbarNav .nav-link {
+  font-size: 20px; }
+
+.header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+  .header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+  .header .container {
+    position: relative;
+    z-index: 2; }
+  .header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1; }
+  .header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #D6C58E; }
+
+@media (pointer: coarse) and (hover: none) {
+  .header {
+    background: url("updateme") black no-repeat center center scroll; }
+
+  .header video {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
