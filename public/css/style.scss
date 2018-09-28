@@ -2,73 +2,120 @@ $bodyfont: 'Arima Madurai', cursive;
 $titlefont: 'Montserrat', sans-serif;
 $logocolour: #D6C58E;
 
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+
+nav {
+    z-index: 100;
+}
+
 #navbarNav {
-    li {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: $bodyfont;
+    .nav-link {
+        color: $logocolour;
+        font-size: 16px;
+    }
+    
+    .nav-link:hover {
         color: white;
     }
     
     .active-link {
-        color: red;
+        color: white;
+    }
+
+    li {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        font-family: $titlefont;
+        z-index: 100;
     }
     
-    .nav-link {
-        font-size: 20px;
+    @media only screen and (min-width: $medium) {
+        li {
+            padding-top: 10px;
+        }
     }
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#D6C58E' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: $logocolour;
+    outline: none;
+} 
+
 .header {
-  position: relative;
-  background-color: black;
-  height: 100vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 
     video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: 0;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
     
     .container {
-      position: relative;
-      z-index: 2;
+        position: relative;
+        z-index: 2;
     }
     
     .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      opacity: 0.5;
-      z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        //background-color: white;
+        opacity: 0.5;
+        z-index: 1;
     }
     
     h2 {
         font-family: $titlefont;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 18px;
+        font-weight: 200;
         color: $logocolour;
     }
+    
+    #logoAndText {
+        display: block;
+    }
+    
+    img {
+        width: 300px;
+    }
+    
+    @media only screen and (min-width: $medium) {
+        img {
+            width: 400px;
+        }
+    }
+    
 }
 
 
 
 
+
+/*
 
 @media (pointer: coarse) and (hover: none) {
   .header {
@@ -78,3 +125,5 @@ $logocolour: #D6C58E;
     display: none;
   }
 }
+
+*/

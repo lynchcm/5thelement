@@ -1,18 +1,36 @@
+nav {
+  z-index: 100; }
+
+#navbarNav .nav-link {
+  color: #D6C58E;
+  font-size: 16px; }
+#navbarNav .nav-link:hover {
+  color: white; }
+#navbarNav .active-link {
+  color: white; }
 #navbarNav li {
   padding-left: 20px;
   padding-right: 20px;
-  font-family: "Arima Madurai", cursive;
-  color: white; }
-#navbarNav .active-link {
-  color: red; }
-#navbarNav .nav-link {
-  font-size: 20px; }
+  padding-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  z-index: 100; }
+@media only screen and (min-width: 768px) {
+  #navbarNav li {
+    padding-top: 10px; } }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#D6C58E' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.custom-toggler.navbar-toggler {
+  border-color: #D6C58E;
+  outline: none; }
 
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: black;
   height: 100vh;
-  min-height: 25rem;
   width: 100%;
   overflow: hidden; }
   .header video {
@@ -37,20 +55,32 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
     opacity: 0.5;
     z-index: 1; }
   .header h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 200;
     color: #D6C58E; }
+  .header #logoAndText {
+    display: block; }
+  .header img {
+    width: 300px; }
+  @media only screen and (min-width: 768px) {
+    .header img {
+      width: 400px; } }
+
+/*
 
 @media (pointer: coarse) and (hover: none) {
   .header {
-    background: url("updateme") black no-repeat center center scroll; }
-
+    background: url('updateme') black no-repeat center center scroll;
+  }
   .header video {
-    display: none; } }
+    display: none;
+  }
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */
