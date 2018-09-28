@@ -88,11 +88,20 @@ nav {
         z-index: 1;
     }
     
+    h1 {
+        font-family: $titlefont;
+        font-size: 14px;
+        font-weight: 200;
+        color: $logocolour;
+        padding: 0 50px 50px 50px;
+    }
+    
     h2 {
         font-family: $titlefont;
         font-size: 18px;
         font-weight: 200;
         color: $logocolour;
+        padding-bottom: 30px;
     }
     
     #logoAndText {
@@ -100,12 +109,13 @@ nav {
     }
     
     img {
-        width: 300px;
+        width: 200px;
+        //border: 1px solid green;
     }
     
     @media only screen and (min-width: $medium) {
         img {
-            width: 400px;
+            width: 300px;
         }
     }
 }
