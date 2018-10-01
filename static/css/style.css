@@ -69,13 +69,37 @@ nav {
     font-weight: 200;
     color: #D6C58E;
     padding-bottom: 30px; }
-  .header #logoAndText {
-    display: block; }
-  .header img {
+  .header .home-page-logo {
     width: 200px; }
+  .header .other-page-logo {
+    width: 150px;
+    padding-top: 100px; }
   @media only screen and (min-width: 768px) {
-    .header img {
+    .header .home-page-logo {
       width: 300px; } }
+
+.capitals {
+  text-transform: uppercase; }
+
+h3 {
+  color: #D6C58E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  position: absolute; }
+
+.features {
+  position: relative; }
+  .features .col-md-3 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.stars {
+  /*position: absolute;
+  top: 0;
+  left: 0;*/ }
 
 /*
 

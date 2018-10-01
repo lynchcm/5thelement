@@ -57,18 +57,25 @@ nav {
     width: 100%;
     opacity: 0.5;
     z-index: 1; }
+  .header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #D6C58E;
+    padding: 0 50px 50px 50px; }
   .header h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 200;
-    color: #D6C58E; }
+    color: #D6C58E;
+    padding-bottom: 30px; }
   .header #logoAndText {
     display: block; }
   .header img {
-    width: 300px; }
+    width: 200px; }
   @media only screen and (min-width: 768px) {
     .header img {
-      width: 400px; } }
+      width: 300px; } }
 
 /*
 

@@ -105,24 +105,66 @@ nav {
     }
     
     #logoAndText {
-        display: block;
+        //display: block;
+        //border: 1px solid green;
     }
     
-    img {
+    .home-page-logo {
         width: 200px;
         //border: 1px solid green;
     }
     
+    .other-page-logo {
+        width: 150px;
+        padding-top: 100px;
+        //border: 1px solid green;
+    }
+    
     @media only screen and (min-width: $medium) {
-        img {
+        .home-page-logo {
             width: 300px;
         }
     }
 }
 
+.capitals {
+    text-transform: uppercase;
+}
 
 
 
+img {
+    //border: 1px solid blue;
+}
+
+h3 {
+    color: $logocolour;
+    font-family: $titlefont;
+    font-size: 18px;
+    font-weight: 200;
+    //border: 1px solid red;
+    position: absolute;
+    //top: 40%;
+}
+
+.features {
+    position: relative;
+    
+    .col-md-3 {
+        //border: 1px solid green;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //height: 100px;
+    }
+}
+
+.stars {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+}
 
 /*
 
