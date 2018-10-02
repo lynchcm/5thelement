@@ -1,32 +1,97 @@
 {{ partial "head.html" . }}
+        <div class="header">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="backgroundVideo">
+                <source src="/images/background.mp4" type="video/mp4">
+            </video>
+           <!-- <div class="container h-100">
 
-                    <div class="w-100" id="logoAndText">
-                        <img class="mx-auto d-block other-page-logo" src="/images/logo.png">
-                        <h1>INTEGRATIVE CONSULTING</h1>
-                        <h2 class="capitals">{{ .Title }}</h2>
-                        <div class="row text-center features">
-                            <div class="col-md-3">
-                                <img class="w-100 stars" src="/images/star.png">
-                                <h3 class="w-100">{{ .Params.item1 | safeHTML }}</h3>
-                            </div>
-                            <div class="col-md-3">
-                                <img class="w-100 stars" src="/images/star.png">
-                                <h3 class="w-100">{{ .Params.item2 }}</h3>
-                            </div>
-                            <div class="col-md-3">
-                                <img class="w-100 stars" src="/images/star.png">
-                                <h3 class="w-100">{{ .Params.item3 | safeHTML }}</h3>
-                            </div>
-                            <div class="col-md-3">
-                                <img class="w-100 stars" src="/images/star.png">
-                                <h3 class="w-100">{{ .Params.item4 | safeHTML }}</h3>
-                            </div>
+            </div> -->
+        </div>
+
+        <div class="container-fluid text-center content">
+            <img class="mx-auto d-block other-page-logo" src="/images/logo.png">
+            <h1>INTEGRATIVE CONSULTING</h1>
+            <h2 class="capitals">{{ .Title }}</h2>
+            <div class="row features">
+                <div class="col-lg-3 anchorlink" id="anchor1link">
+                        <img class="w-100 stars" src="/images/star2.png">
+                        <h3>{{ .Params.sec1 }}</h3>
+                </div>
+                <div class="col-lg-3 anchorlink" id="anchor2link">
+                        <img class="w-100 stars" src="/images/star2.png">
+                        <h3>{{ .Params.sec2 }}</h3>
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="col-lg-3 anchorlink" id="anchor3link">
+                        <img class="w-100 stars" src="/images/star2.png">
+                        <h3>{{ .Params.sec3 }}</h3>
+                </div>
+                <div class="col-lg-3 anchorlink" id="anchor4link">
+                        <img class="w-100 stars" src="/images/star2.png">
+                        <h3>{{ .Params.sec4 }}</h3>
+                </div>
+            </div>
+            <div class="container" id="anchor1">
+                <h3>{{ .Params.sec1 }}</h3>
+                <p>{{ .Params.desc1 }}</p>
+            </div>
+            <div class="container" id="anchor2">
+                <h3>{{ .Params.sec2 | safeHTML }}</h3>
+                <div class="row sec2">
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic1 }}">
                         </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText1 }}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic2 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText2 }}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic3 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText3 }}</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic4 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText4 }}</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="container" id="anchor3">
+                <h3>{{ .Params.sec3 | safeHTML }}</h3>
+                <p>{{ .Params.desc3 | safeHTML }}</p>
+            </div>
+            <div class="container process" id="anchor4">
+                <h3>{{ .Params.sec4 | safeHTML }}</h3>
 
+                <div class="row" id="process-row">
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-1">Get in touch</p>
+                    </div>
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-2">Define your goals for coaching</p>
+                    </div>
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-3">Reflect and evaluate during our sessions</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="process-step" id="process-4">Apply your insights to day-to-day life</p>
+                    </div>
+                    <img class="arrow" id="arrow1" src="/images/arrow1.png">
+                    <img class="arrow" id="arrow2" src="/images/arrow2.png">
+                    <img class="arrow" id="arrow3" src="/images/arrow1.png">
+                </div>
+            </div>
+        </div>
+    
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">^</button>
 
 
 {{ partial "footer.html" . }}
