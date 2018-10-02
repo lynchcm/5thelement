@@ -89,14 +89,14 @@ h3 {
   @media only screen and (min-width: 768px) {
     .content .home-page-logo {
       width: 300px; } }
-  .content .container {
-    padding-bottom: 400px; }
-    .content .container h3 {
-      text-align: left;
-      padding-bottom: 20px; }
-    .content .container p {
-      font-family: "Arima Madurai", cursive;
-      text-align: left; }
+  .content .container h3 {
+    text-align: left;
+    padding-bottom: 20px; }
+  .content .container p {
+    font-family: "Arima Madurai", cursive;
+    text-align: left; }
+  .content .spacer {
+    height: 400px; }
 
 .features {
   padding-bottom: 200px; }
@@ -134,9 +134,6 @@ h3 {
   /*position: absolute;
   top: 0;
   left: 0;*/ }
-
-#anchor1, #anchor2, #anchor3, #anchor4 {
-  border: 1px solid red; }
 
 .anchorlink:hover {
   cursor: pointer; }

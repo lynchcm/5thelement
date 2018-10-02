@@ -53,7 +53,7 @@
            
         </div>
 
-        <div class="container-fluid text-center content">
+        <div class="container-fluid text-center content" id="menu-hide">
             <img class="mx-auto d-block other-page-logo" src="/images/logo.png">
             <h1>INTEGRATIVE CONSULTING</h1>
             <h2 class="capitals">Optimize Your Health and Wellness</h2>
@@ -80,6 +80,7 @@
                 <h3>THE 5TH ELEMENT APPROACH</h3>
                 <p>Health is about far more than treating the body when it’s ill. It’s about taking a holistic, mind and body approach that helps you feel the best you can every day. Drawing on my studies in naturopathic medicine and holistic nutrition, I provide advice on alternative remedies to help you meet your personal health and wellness goals. For some, this might be living well with a chronic condition like fibromyalgia or chronic fatigue syndrome; for others, it may be about prevention. Whatever your goals, 5th Element provides a listening ear and trustworthy advice.</p>
             </div>
+            <div class="spacer"></div>
             <div class="container" id="anchor2">
                 <h3>WHY WORK WITH 5TH ELEMENT</h3>
                 <div class="row sec2">
@@ -109,10 +110,12 @@
                     </div>
                 </div>
             </div>
+            <div class="spacer"></div>
             <div class="container" id="anchor3">
                 <h3>WHAT TO EXPECT</h3>
                 <p>After talking through your goals and expectations, we’ll begin our sessions together. Most coaching takes place remotely using online video calling, but face-to-face sessions can also be arranged. During the sessions, I’ll subtly structure our conversation through gentle guidance and prompts, providing reliable information on naturopathic remedies where appropriate. Think of it as a conversation with a supportive friend, but with no expectations or bias. Every person is unique, so the frequency and number of sessions can be tailored to exactly what you need.</p>
             </div>
+            <div class="spacer"></div>
             <div class="container process" id="anchor4">
                 <h3>THE PROCESS</h3>
 
@@ -134,6 +137,7 @@
                     <img class="arrow" id="arrow3" src="/images/arrow1.png">
                 </div>
             </div>
+            <div class="spacer"></div>
         </div>
     
         <button onclick="topFunction()" id="toTopBtn" title="Go to top">^</button>
@@ -152,7 +156,7 @@
         }
         
         function toggleLogoDisplay() {
-            var displayStatus = document.getElementById("logoAndText");
+            var displayStatus = document.getElementById("menu-hide");
             if (displayStatus.style.display != "none") {
                 displayStatus.style.display = "none";
             } else {
@@ -162,22 +166,29 @@
         
         document.querySelector('#anchor1link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth' });
+            var w = window.innerWidth;
+            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor2link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor3link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth' });
+            var w = window.innerWidth;
+            if (w < 768) {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "start" });
+            } else {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "center" });
+            }
+            
         });
         
         document.querySelector('#anchor4link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
             
                 window.onscroll = function() {scrollFunction()};

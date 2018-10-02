@@ -145,7 +145,7 @@ img {
     
     .container {
         //padding-top: 200px;
-        padding-bottom: 400px;
+        //padding-bottom: 400px;
         //border: 1px solid green;
         
         h3 {
@@ -158,6 +158,10 @@ img {
             font-family: $bodyfont;
             text-align: left;
         }
+    }
+    
+    .spacer {
+        height: 400px;
     }
 }
 
@@ -223,7 +227,7 @@ img {
 }
 
 #anchor1, #anchor2, #anchor3, #anchor4 {
-    border: 1px solid red;
+    //border: 1px solid red;
 }
 
 .anchorlink:hover {

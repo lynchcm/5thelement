@@ -53,7 +53,7 @@
            
         </div>
 
-        <div class="container-fluid text-center content">
+        <div class="container-fluid text-center content" id="menu-hide">
             <img class="mx-auto d-block other-page-logo" src="/images/logo.png">
             <h1>INTEGRATIVE CONSULTING</h1>
             <h2 class="capitals">Elevate Your Everyday</h2>
@@ -80,6 +80,7 @@
                 <h3>THE 5TH ELEMENT APPROACH</h3>
                 <p>Nothing happens in isolation. In our sessions, I help my clients step back and take a big picture, body and mind approach to evaluating where they are and where they want to be. By uncovering and understanding hidden behavioural patterns and thought processes, we build self awareness, clarity, and inner peace, so that you feel confident tackling whatever life throws at you both now and in the future. All coaching happens in a supportive, conversational style — no pressure or expectations, just reflection, exploration and discussion.</p>
             </div>
+            <div class="spacer"></div>
             <div class="container" id="anchor2">
                 <h3>WHY WORK WITH 5TH ELEMENT</h3>
                 <div class="row sec2">
@@ -109,10 +110,12 @@
                     </div>
                 </div>
             </div>
+            <div class="spacer"></div>
             <div class="container" id="anchor3">
                 <h3>WHAT TO EXPECT</h3>
                 <p>After talking through your goals and expectations, we’ll begin our sessions together. Most coaching takes place remotely using online video calling, but face-to-face sessions can also be arranged. During the sessions, I’ll subtly structure our conversation through gentle guidance and prompts, helping you to reflect and meet your goals — think of it as a conversation with a supportive friend, but with no expectations or bias. Every person is unique, so the frequency and number of sessions can be tailored to exactly what you need.</p>
             </div>
+            <div class="spacer"></div>
             <div class="container process" id="anchor4">
                 <h3>THE PROCESS</h3>
 
@@ -134,6 +137,7 @@
                     <img class="arrow" id="arrow3" src="/images/arrow1.png">
                 </div>
             </div>
+            <div class="spacer"></div>
         </div>
     
         <button onclick="topFunction()" id="toTopBtn" title="Go to top">^</button>
@@ -152,7 +156,7 @@
         }
         
         function toggleLogoDisplay() {
-            var displayStatus = document.getElementById("logoAndText");
+            var displayStatus = document.getElementById("menu-hide");
             if (displayStatus.style.display != "none") {
                 displayStatus.style.display = "none";
             } else {
@@ -162,22 +166,29 @@
         
         document.querySelector('#anchor1link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth' });
+            var w = window.innerWidth;
+            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor2link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor3link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth' });
+            var w = window.innerWidth;
+            if (w < 768) {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "start" });
+            } else {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "center" });
+            }
+            
         });
         
         document.querySelector('#anchor4link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
             
                 window.onscroll = function() {scrollFunction()};

@@ -21,6 +21,7 @@
         
         document.querySelector('#anchor1link').addEventListener('click', function(e) {
             e.preventDefault();
+            var w = window.innerWidth;
             document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
@@ -31,7 +32,13 @@
         
         document.querySelector('#anchor3link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "start" });
+            var w = window.innerWidth;
+            if (w < 768) {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "start" });
+            } else {
+                document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "center" });
+            }
+            
         });
         
         document.querySelector('#anchor4link').addEventListener('click', function(e) {
