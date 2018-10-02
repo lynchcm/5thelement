@@ -29,6 +29,14 @@ nav {
   border-color: #D6C58E;
   outline: none; }
 
+#home-page-flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #home-page-flex h2 {
+    padding-bottom: 0; }
+
 h3 {
   color: #D6C58E;
   font-family: "Montserrat", sans-serif;
@@ -81,8 +89,7 @@ h3 {
     color: #D6C58E;
     padding-bottom: 40px; }
   .content .home-page-logo {
-    width: 200px;
-    padding-top: 100px; }
+    width: 200px; }
   .content .other-page-logo {
     width: 150px;
     padding-top: 100px; }
@@ -244,7 +251,8 @@ form {
     background-color: #3d3d3d;
     border: none;
     color: #D6C58E;
-    padding-top: 5px; }
+    padding-top: 5px;
+    font-family: "Montserrat", sans-serif; }
   form button:hover {
     cursor: pointer; }
 
