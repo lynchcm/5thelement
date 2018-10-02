@@ -100,14 +100,14 @@ h3 {
 
 .features {
   padding-bottom: 200px; }
-  .features .col-lg-3 {
+  .features .col-md-6 a {
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 300px;
     margin: 0 auto; }
-    .features .col-lg-3 h3 {
+    .features .col-md-6 a h3 {
       width: 120px;
       font-size: 16px; }
   .features h3 {
@@ -125,10 +125,13 @@ h3 {
   background-color: #D6C58E;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 50px; }
 
 .graphic-text {
-  padding-top: 25px; }
+  padding: 25px 0 50px 0;
+  max-width: 200px;
+  margin: 0 auto; }
 
 .stars {
   /*position: absolute;
@@ -140,9 +143,9 @@ h3 {
 
 .process p {
   font-family: "Shadows Into Light Two", cursive;
-  text-align: center;
   padding-bottom: 10px;
-  width: 200px; }
+  width: 200px;
+  text-align: center; }
 
 #process-row {
   position: relative;
@@ -152,27 +155,32 @@ h3 {
   position: absolute; }
 
 .process-step {
-  position: absolute; }
+  position: absolute;
+  text-align: center; }
 
 #process-1 {
   top: 0;
-  left: 10%; }
+  left: 10%;
+  text-align: center; }
 
 #process-2 {
   top: 0;
-  right: 10%; }
+  right: 10%;
+  text-align: center; }
 
 #process-3 {
   top: 0;
-  left: 10%; }
+  left: 10%;
+  text-align: center; }
 
 #process-4 {
   top: 0;
-  right: 10%; }
+  right: 10%;
+  text-align: center; }
 
 #arrow1 {
   top: 8%;
-  left: 50%; }
+  right: 50%; }
 
 #arrow2 {
   top: 35%;
@@ -210,7 +218,7 @@ h3 {
 
   #arrow1 {
     top: 12%;
-    left: 10%; }
+    left: 15%; }
 
   #arrow2 {
     top: 25%;
