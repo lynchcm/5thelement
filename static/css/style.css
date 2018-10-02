@@ -90,8 +90,7 @@ h3 {
     .content .home-page-logo {
       width: 300px; } }
   .content .container {
-    padding-top: 200px;
-    padding-bottom: 200px; }
+    padding-bottom: 400px; }
     .content .container h3 {
       text-align: left;
       padding-bottom: 20px; }
@@ -99,18 +98,20 @@ h3 {
       font-family: "Arima Madurai", cursive;
       text-align: left; }
 
-.features .col-lg-3 {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
-  margin: 0 auto; }
-  .features .col-lg-3 h3 {
-    width: 120px;
-    font-size: 16px; }
-.features h3 {
-  position: absolute; }
+.features {
+  padding-bottom: 200px; }
+  .features .col-lg-3 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto; }
+    .features .col-lg-3 h3 {
+      width: 120px;
+      font-size: 16px; }
+  .features h3 {
+    position: absolute; }
 
 .sec2 .col-md-3 {
   margin: 0 auto; }

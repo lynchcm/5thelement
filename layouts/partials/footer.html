@@ -21,22 +21,22 @@
         
         document.querySelector('#anchor1link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor1').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor2link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor2').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor3link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor3').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
         
         document.querySelector('#anchor4link').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#anchor4').scrollIntoView({ behavior: 'smooth', block: "start" });
         });
             
                 window.onscroll = function() {scrollFunction()};
