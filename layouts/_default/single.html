@@ -8,7 +8,7 @@
             </div> -->
         </div>
 
-    <div class="container-fluid text-center content">
+        <div class="container-fluid text-center content">
             <img class="mx-auto d-block other-page-logo" src="/images/logo.png">
             <h1>INTEGRATIVE CONSULTING</h1>
             <h2 class="capitals">{{ .Title }}</h2>
@@ -31,65 +31,67 @@
                         <h3>{{ .Params.sec4 }}</h3>
                 </div>
             </div>
-        <div class="container" id="anchor1">
-            <h3>{{ .Params.sec1 }}</h3>
-            <p>{{ .Params.desc1 }}</p>
-        </div>
-        <div class="container" id="anchor2">
-            <h3>{{ .Params.sec2 | safeHTML }}</h3>
-            <div class="row sec2">
-                <div class="col-md-3">
-                    <div class="graphic-background">
-                        <img src="{{ .Params.graphic1 }}">
+            <div class="container" id="anchor1">
+                <h3>{{ .Params.sec1 }}</h3>
+                <p>{{ .Params.desc1 }}</p>
+            </div>
+            <div class="container" id="anchor2">
+                <h3>{{ .Params.sec2 | safeHTML }}</h3>
+                <div class="row sec2">
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic1 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText1 }}</p>
                     </div>
-                    <p class="text-center graphic-text">{{ .Params.graphicText1 }}</p>
-                </div>
-                <div class="col-md-3">
-                    <div class="graphic-background">
-                        <img src="{{ .Params.graphic2 }}">
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic2 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText2 }}</p>
                     </div>
-                    <p class="text-center graphic-text">{{ .Params.graphicText2 }}</p>
-                </div>
-                <div class="col-md-3">
-                    <div class="graphic-background">
-                        <img src="{{ .Params.graphic3 }}">
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic3 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText3 }}</p>
                     </div>
-                    <p class="text-center graphic-text">{{ .Params.graphicText3 }}</p>
-                </div>
-                <div class="col-md-3">
-                    <div class="graphic-background">
-                        <img src="{{ .Params.graphic4 }}">
+                    <div class="col-md-3">
+                        <div class="graphic-background">
+                            <img src="{{ .Params.graphic4 }}">
+                        </div>
+                        <p class="text-center graphic-text">{{ .Params.graphicText4 }}</p>
                     </div>
-                    <p class="text-center graphic-text">{{ .Params.graphicText4 }}</p>
                 </div>
             </div>
-        </div>
-        <div class="container" id="anchor3">
-            <h3>{{ .Params.sec3 | safeHTML }}</h3>
-            <p>{{ .Params.desc3 | safeHTML }}</p>
-        </div>
-        <div class="container process" id="anchor4">
-            <h3>{{ .Params.sec4 | safeHTML }}</h3>
+            <div class="container" id="anchor3">
+                <h3>{{ .Params.sec3 | safeHTML }}</h3>
+                <p>{{ .Params.desc3 | safeHTML }}</p>
+            </div>
+            <div class="container process" id="anchor4">
+                <h3>{{ .Params.sec4 | safeHTML }}</h3>
 
-            <div class="row" id="process-row">
-                <div class="col-sm-3" >
-                    <p class="process-step" id="process-1">Get in touch and tell me a little about yourself</p>
+                <div class="row" id="process-row">
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-1">Get in touch</p>
+                    </div>
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-2">Define your goals for coaching</p>
+                    </div>
+                    <div class="col-sm-3" >
+                        <p class="process-step" id="process-3">Reflect and evaluate during our sessions</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="process-step" id="process-4">Apply your insights to day-to-day life</p>
+                    </div>
+                    <img class="arrow" id="arrow1" src="/images/arrow1.png">
+                    <img class="arrow" id="arrow2" src="/images/arrow2.png">
+                    <img class="arrow" id="arrow3" src="/images/arrow1.png">
                 </div>
-                <div class="col-sm-3" >
-                    <p class="process-step" id="process-2">Define your goals for our sessions</p>
-                </div>
-                <div class="col-sm-3" >
-                    <p class="process-step" id="process-3">Reflect and evaluate over several sessions</p>
-                </div>
-                <div class="col-sm-3">
-                    <p class="process-step" id="process-4">Apply the tools you’ve learnt to day-to-day life</p>
-                </div>
-                <img class="arrow" id="arrow1" src="/images/arrow1.png">
-                <img class="arrow" id="arrow2" src="/images/arrow2.png">
-                <img class="arrow" id="arrow3" src="/images/arrow1.png">
             </div>
         </div>
-    </div>
+    
+        <button onclick="topFunction()" id="toTopBtn" title="Go to top">^</button>
 
 
 {{ partial "footer.html" . }}
