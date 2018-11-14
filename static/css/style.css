@@ -278,6 +278,15 @@ form {
 #toTopBtn:hover {
   background-color: #555; }
 
+#made-by {
+  position: relative;
+  width: 100%;
+  bottom: 0; }
+  #made-by p {
+    text-align: center; }
+    #made-by p a {
+      color: inherit; }
+
 /*
 
 @media (pointer: coarse) and (hover: none) {

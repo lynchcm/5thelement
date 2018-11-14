@@ -419,7 +419,19 @@ form {
     background-color: #555;
 }
 
-
+#made-by {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+    p {
+        text-align: center;
+        
+        a {
+            color: inherit;
+        }
+    }
+}
 
 /*
 

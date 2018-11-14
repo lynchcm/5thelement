@@ -1,3 +1,4 @@
+
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,7 +38,8 @@
                 }
             }
         });
-
+        
+        {{ if ne .Title "Contact" }}
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -50,6 +52,7 @@
             $('html,body').animate({scrollTop: 300}, 1000);
             return false;
         }
+        {{ end }}
         
     </script>
   </body>
